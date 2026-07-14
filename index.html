@@ -2,132 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pure Semantic HTML Static Webpage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamScape</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <table width="100%" border="0" cellspacing="0" cellpadding="10">
-            <tr>
-                <td>
-                    <h1>StaticWeb</h1>
-                </td>
-                <td align="right">
-                    <nav>
-                        <a href="#home">Home</a> &nbsp;|&nbsp;
-                        <a href="#articles">Articles</a> &nbsp;|&nbsp;
-                        <a href="#about">About</a> &nbsp;|&nbsp;
-                        <a href="#contact">Contact Us</a>
-                    </nav>
-                </td>
-            </tr>
-        </table>
-    </header>
+<header>
+    <h1>DreamScape</h1>
 
-    <hr>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
 
-    <!-- Hero / Showcase Section -->
-    <section id="home">
-        <center>
-            <h2>Semantic Structures Without CSS</h2>
-            <p>This layout uses raw HTML components to build an organized document hierarchy that browsers can cleanly parse out-of-the-box.</p>
-            <p><a href="#articles"><b>Read Our Articles Below &darr;</b></a></p>
-        </center>
-    </section>
+<section class="hero">
 
-    <hr>
+    <div class="content">
 
-    <!-- Main Content Layout using a Structural Table -->
-    <table width="100%" border="0" cellspacing="0" cellpadding="20">
-        <tr valign="top">
-           
-            <!-- Left Side: Main Content Column -->
-            <td width="70%">
-                <main id="articles">
-                   
-                    <article>
-                        <h2>1. Core Structural Tags</h2>
-                        <p>Published: July 7, 2026</p>
-                        <p>When you omit cascading style sheets entirely, the semantic markup handles all of the structural heavy lifting. Elements like <code>&lt;main&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;section&gt;</code> tell screen readers and web scrapers exactly how information flows.</p>
-                        <p>Using raw browser defaults ensures excellent loading performance, perfect accessibility compliance, and absolute structural clarity.</p>
-                    </article>
+        <h2>Create Your Dream Website</h2>
 
-                    <br><hr><br>
+        <p>
+            Beautiful, responsive and modern websites built with
+            HTML and CSS.
+        </p>
 
-                    <article>
-                        <h2>2. Native Interaction Elements</h2>
-                        <p>Published: July 5, 2026</p>
-                        <p>Browsers come equipped with excellent interactive elements by default. We can capture text inputs, provide multiple-choice configurations, and submit structured information to backend parsers using pure markup.</p>
-                       
-                        <h3>Interactive Demonstration Forms</h3>
-                        <form id="contact" action="#" method="post">
-                            <fieldset>
-                                <legend><b>User Inquiry Form</b></legend>
-                                <p>
-                                    <label for="name">Full Name: </label>
-                                    <input type="text" id="name" name="username" required placeholder="John Doe">
-                                </p>
-                                <p>
-                                    <label for="email">Email Address: </label>
-                                    <input type="email" id="email" name="useremail" required>
-                                </p>
-                                <p>
-                                    <label for="topic">Inquiry Topic: </label>
-                                    <select id="topic" name="usertopic">
-                                        <option value="general">General Feedback</option>
-                                        <option value="technical">Technical Architecture</option>
-                                        <option value="academics">Academic Curriculum</option>
-                                    </select>
-                                </p>
-                                <p>
-                                    <label for="message">Message Details:</label><br>
-                                    <textarea id="message" name="usermessage" rows="5" cols="40" placeholder="Type your notes here..."></textarea>
-                                </p>
-                                <p>
-                                    <input type="submit" value="Submit Form Data">
-                                    <input type="reset" value="Clear Entries">
-                                </p>
-                            </fieldset>
-                        </form>
-                    </article>
+        <button>Explore More</button>
 
-                </main>
-            </td>
+    </div>
 
-            <!-- Right Side: Sidebar Column -->
-            <td width="30%" bgcolor="#f4f4f4">
-                <aside id="about">
-                    <h3>Document References</h3>
-                    <p>Static pages map data out directly without real-time database queries or processor overhead.</p>
-                   
-                    <h4>Core Benefits:</h4>
-                    <ul>
-                        <li>Instant browser painting</li>
-                        <li>Low memory footprints</li>
-                        <li>High data compatibility</li>
-                    </ul>
+</section>
 
-                    <h4>Required Components:</h4>
-                    <ol>
-                        <li>Document Type Definition</li>
-                        <li>Semantic Wrapper Blocks</li>
-                        <li>Data Input Control Interfaces</li>
-                    </ol>
-                </aside>
-            </td>
+<section class="cards">
 
-        </tr>
-    </table>
+<div class="card">
+<h2>🌍 Explore</h2>
+<p>Discover beautiful places around the world.</p>
+</div>
 
-    <hr>
+<div class="card">
+<h2>💡 Learn</h2>
+<p>Gain knowledge through interactive content.</p>
+</div>
 
-    <!-- Footer Section -->
-    <footer>
-        <center>
-            <p>&copy; 2026 Pure HTML Architecture. Assembled completely without style configurations.</p>
-        </center>
-    </footer>
+<div class="card">
+<h2>🚀 Grow</h2>
+<p>Build amazing projects and improve your skills.</p>
+</div>
+
+</section>
+
+<section class="gallery">
+
+<h2>Gallery</h2>
+
+<div class="images">
+
+<img src="https://picsum.photos/300/200?1">
+<img src="https://picsum.photos/300/200?2">
+<img src="https://picsum.photos/300/200?3">
+<img src="https://picsum.photos/300/200?4">
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<h2>Contact Us</h2>
+
+<form>
+
+<input type="text" placeholder="Your Name">
+
+<input type="email" placeholder="Your Email">
+
+<textarea placeholder="Your Message"></textarea>
+
+<button>Send Message</button>
+
+</form>
+
+</section>
+
+<footer>
+
+<h3>Designed by Pranathi Badana ❤️</h3>
+
+</footer>
 
 </body>
 </html>
